@@ -1,7 +1,5 @@
 # iBMS BMS Creator (iBMSC)
 
-Please refer to *release* folder for binary distributions. 
-
 [简体中文](http://bbs.rohome.net/thread-1074065-1-1.html) |
 [日本語](http://hitkey.nekokan.dyndns.info/ibmsc_ja/) |
 [Archive](http://www.cs.mcgill.ca/~ryang6/iBMSC/)
