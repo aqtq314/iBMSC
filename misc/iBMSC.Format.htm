@@ -1,0 +1,575 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=shift_jis">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+.auto-style1 {
+	color: #548DD4;
+}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNoSpacing><b><u><span style='font-size:10.0pt;font-family:"Courier New"'>File
+Format Specifier:</span></u></b></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Char() </span><span style='color:#C0504D'>&quot;iBMSC&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>69 42 4D 53 43</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Byte </span><span style='color:#7F7F7F'>Version.</span>Major&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>02</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Byte </span><span style='color:#7F7F7F'>Version.</span>Minor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>04</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Byte </span><span style='color:#7F7F7F'>Version.</span>Build&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing><b><u><span style='font-size:10.0pt;font-family:"Courier New"'>Preferences:</span></u></b></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Char() </span><span style='color:#C0504D'>&quot;Pref&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>50 72 65 66</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer </span>Switches:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>01 CF 1F 01 </span></b><span style='color:#4BACC6'>(&amp;H
+011FCF01)</span> <span style='color:#F79646'>(&amp;B 00000001 00011111 11001111
+00000001)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span>NTInput&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00000001)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 00000000 00000001)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span>ErrorCheck&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00000002)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 00000000 00000010)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span>PreviewOnClick&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00000004)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 00000000 00000100)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span>ShowFileName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00000008)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 00000000 00001000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Show.</span>Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00000100)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 00000001 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Show.</span>ToolBar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00000200)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 00000010 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Show.</span>OptionsPanel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00000400)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 00000100 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Show.</span>StatusBar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00000800)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 00001000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Show.</span>LeftSplitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H
+00001000) </span><span style='color:#F79646'>(&amp;B 00000000 00000000 00010000
+00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Show.</span>RightSplitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00002000)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 00100000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.Grid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00004000)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 01000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.Sub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00008000)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000000 10000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.Background&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00010000)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000001 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.MeasureNumber&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00020000)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000010 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.MeasureLine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00040000)
+</span><span style='color:#F79646'>(&amp;B 00000000 00000100 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.VerticalLine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00080000)
+</span><span style='color:#F79646'>(&amp;B 00000000 00001000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.ColumnTitle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00100000)
+</span><span style='color:#F79646'>(&amp;B 00000000 00010000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.BGA_Layer_Poor&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 00200000)
+</span><span style='color:#F79646'>(&amp;B 00000000 00100000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.STOP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#7030A0'>Mask
+</span><span style='color:#4BACC6'>(&amp;H 00400000) </span><span
+style='color:#F79646'>(&amp;B 00000000 01000000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Show.BPM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#7030A0'>Mask
+</span><span style='color:#4BACC6'>(&amp;H 00800000) </span><span
+style='color:#F79646'>(&amp;B 00000000 <span style='font-size:10.0pt;font-family:"Courier New"'><span
+style='color:#F79646'>1</span></span>0000000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>Snap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 01000000)
+</span><span style='color:#F79646'>(&amp;B 00000001 00000000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>DisableVerticalMove&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 02000000)
+</span><span style='color:#F79646'>(&amp;B 00000010 00000000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>LockPanel.Left&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 04000000)
+</span><span style='color:#F79646'>(&amp;B 00000100 00000000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>LockPanel.Middle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 08000000)
+</span><span style='color:#F79646'>(&amp;B 00001000 00000000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean </span><span style='color:#7F7F7F'>Grid.</span>LockPanel.Right&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 10000000)
+</span><span style='color:#F79646'>(&amp;B 00010000 00000000 00000000 00000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>Grid.</span>Divide&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>10 00 00 00 </span></b><span style='color:#4BACC6'>(&amp;H
+00000010) </span><span style='color:#9BBB59'>(&amp;D 16)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>Grid.</span>Sub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>04 00 00 00 </span></b><span style='color:#4BACC6'>(&amp;H
+00000004) </span><span style='color:#9BBB59'>(&amp;D 4)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>Grid.</span>SlashKey &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>C0 00 00 00 </span></b><span style='color:#4BACC6'>(&amp;H
+000000C0) </span><span style='color:#9BBB59'>(&amp;D 192)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Single</span> <span style='color:#7F7F7F'>Grid.</span>Height&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 00 00 40 </span></b><span style='color:#4BACC6'>(&amp;H
+40000000) </span><span style='color:#9BBB59'>(&amp;D 2.0) </span><span
+style='color:#F79646'>(&amp;B 0 10000000 00000000000000000000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Single</span> <span style='color:#7F7F7F'>Grid.</span>Width&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 00 80 3F </span></b><span style='color:#4BACC6'>(&amp;H
+3F800000) </span><span style='color:#9BBB59'>(&amp;D 1.0) </span><span
+style='color:#F79646'>(&amp;B 0 01111111 00000000000000000000000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>Grid.</span>BColumnsCount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<b><span style='color:red'>32 00 00 00 </span></b><span
+style='color:#4BACC6'>(&amp;H 00000032) </span><span style='color:#9BBB59'>(&amp;D
+50)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing><b><u><span style='font-size:10.0pt;font-family:"Courier New"'>Header:</span></u></b></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Char()</span> <span style='color:#C0504D'>&quot;Head&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>48 65 61 64</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String</span> <span style='color:#7F7F7F'>Header.</span>Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>09 4F 61 74 68 20 53 69 67 6E </span></b><span
+style='color:#C0504D'>(&quot;Oath Sign&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String</span> <span style='color:#7F7F7F'>Header.</span>Artist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>04 44 6F 61 7A</span></b> <span style='color:#C0504D'>(&quot;Doaz&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String</span> <span style='color:#7F7F7F'>Header.</span>Genre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>05 41 6E 69 6D 65</span></b> <span style='color:
+#C0504D'>(&quot;Anime&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>Header.</span>BPM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>80 31 17 00</span></b> <span style='color:#4BACC6'>(&amp;H
+00173180)</span> <span style='color:#9BBB59'>(&amp;D 1520000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Byte</span> <span style='color:#7F7F7F'>Header.</span>Player_Rank&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>30</span></b> <span style='color:#F79646'>(&amp;B
+00110000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>Header.</span>Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 0F)</span>
+<span style='color:#F79646'>(&amp;B 00001111) </span><span style='color:#00B050'>'zero-based
+instead of one-based</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>Header.</span>Rank&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H F0)</span>
+<span style='color:#F79646'>(&amp;B 11110000) </span><span style='color:#00B050'>'Shift
+by 4</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String </span><span style='color:#7F7F7F'>Header.</span>PlayLevel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>02 31 39</span></b> <span style='color:#C0504D'>(&quot;19&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String </span><span style='color:#7F7F7F'>Header.</span>SubTitle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 </span></b><span style='color:#C0504D'>(&quot;&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String </span><span style='color:#7F7F7F'>Header.</span>SubArtist&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span
+style='color:red'>00 </span></b><span style='color:#C0504D'>(&quot;&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String </span><span style='color:#7F7F7F'>Header.</span>StageFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 </span></b><span style='color:#C0504D'>(&quot;&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String </span><span style='color:#7F7F7F'>Header.</span>Banner&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 </span></b><span style='color:#C0504D'>(&quot;&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String </span><span style='color:#7F7F7F'>Header.</span>BackBMP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 </span></b><span style='color:#C0504D'>(&quot;&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span class="auto-style1">Byte</span><span style='color:#548DD4'> </span><span style='color:#7F7F7F'>Header.</span>Difficulty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String </span><span style='color:#7F7F7F'>Header.</span>ExRank&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 </span></b><span style='color:#C0504D'>(&quot;&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String </span><span style='color:#7F7F7F'>Header.</span>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 </span></b><span style='color:#C0504D'>(&quot;&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String </span><span style='color:#7F7F7F'>Header.</span>Comment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 </span></b><span style='color:#C0504D'>(&quot;&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Short</span> <span style='color:#7F7F7F'>Header.</span>LnObj&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing><b><u><span style='font-size:10.0pt;font-family:"Courier New"'>WAV
+List:</span></u></b></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Char()</span> <span style='color:#C0504D'>&quot;WAV&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>57 41 56 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Byte</span>
+WAVOptions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>03</span></b> <span style='color:#F79646'>(&amp;B 00000011)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean</span> <span style='color:#7F7F7F'>WAV.</span>AllowMultiSelect&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#7030A0'>Mask </span><span
+style='color:#4BACC6'>(&amp;H 01)</span> <span style='color:#F79646'>(&amp;B
+00000001)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean</span> <span style='color:#7F7F7F'>WAV.</span>SynchronizeLabels&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 02)</span>
+<span style='color:#F79646'>(&amp;B 00000010)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>WAV.</span>ItemCount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>01 00 00 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Structure()</span> <span style='color:#7F7F7F'>WAV.</span>Item&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>02 00 09 41 75 64 69 6F 2E 6D 70 33</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Short</span>
+Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span
+style='color:red'>02 00</span></b>&nbsp;&nbsp; <span style='color:#00B050'>'1-based</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String</span>
+&quot;Audio.mp3&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>09 41 75 64 69 6F 2E 6D 70 33</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing><b><u><span style='font-size:10.0pt;font-family:"Courier New"'>Beat:</span></u></b></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Char()</span> <span style='color:#C0504D'>&quot;Beat&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>42 65 61 74</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Short</span> <span style='color:#7F7F7F'>Beat.</span>Numerator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>04 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Short</span> <span style='color:#7F7F7F'>Beat.</span>Denominator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>04 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Byte</span> <span style='color:#7F7F7F'>Beat.</span>BeatChangeMode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>Beat.</span>ItemCount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>01 00 00 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Structure()</span> <span style='color:#7F7F7F'>Beat.</span>Item&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>5F 00 00 00 00 00 00 00 68 40</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Short</span>
+Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>5F 00</span></b> <span style='color:#4BACC6'>(&amp;H
+5F)</span> <span style='color:#9BBB59'>(&amp;D 95)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Double</span>
+MeasureLength&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 00 00 00 00 00 68 40</span></b> <span
+style='color:#4BACC6'>(&amp;H 40680000 00000000)</span> <span style='color:
+#9BBB59'>(&amp;D 192.0)</span> <span style='color:#F79646'>(&amp;B 0
+10000000110 1000000000000000...)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing><b><u><span style='font-size:10.0pt;font-family:"Courier New"'>Expansion
+Code:</span></u></b></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Char()</span> <span style='color:#C0504D'>&quot;Expn&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>45 78 70 6E</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>String</span> <span style='color:#7F7F7F'>Expansion.</span>Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00</span></b> <span style='color:#C0504D'>(&quot;&quot;)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing><b><u><span style='font-size:10.0pt;font-family:"Courier New"'>Note:</span></u></b></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Char()</span> <span style='color:#C0504D'>&quot;Note&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>4E 6F 74 65</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span>
+NoteCount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>01 00 00 00</span></b>&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='color:#00B050'>'This excludes the first BMP note</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Structure()</span>
+Note&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 00 00 00 00 00 F0 BF 01 00 00 00 80 31 17 00 00
+00 00 00 00 00 00 00 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Double</span>
+VPosition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 00 00 00 00 00 F0 BF</span></b> <span
+style='color:#4BACC6'>(&amp;H BFF00000 00000000)</span> <span style='color:
+#9BBB59'>(&amp;D -1.0)</span> <span style='color:#F79646'>(&amp;B 1 01111111111
+0000000000000000...)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span>
+ColumnIndex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>01 00 00 00</span></b> <span style='color:#9BBB59'>(&amp;D
+1)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span>
+Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>80 31 17 00</span></b> <span style='color:#4BACC6'>(&amp;H
+173180)</span> <span style='color:#9BBB59'>(&amp;D 1520000)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Byte</span>
+Format&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean</span>
+LongNote&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 01)</span>
+<span style='color:#F79646'>(&amp;B 00000001)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean</span>
+Hidden&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 02)</span>
+<span style='color:#F79646'>(&amp;B 00000010)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Boolean</span>
+Selected&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#7030A0'>Mask </span><span style='color:#4BACC6'>(&amp;H 04)</span>
+<span style='color:#F79646'>(&amp;B 00000100)</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Double</span>
+Length&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 00 00 00 00 00 00 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing><b><u><span style='font-size:10.0pt;font-family:"Courier New"'>Undo
+/ Redo Commands:</span></u></b></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Char()</span> <span style='color:#C0504D'>&quot;Undo&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>55 6E 64 6F</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>UndoRedo.</span>Count&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>64 00 00 00 </span></b>&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='color:#00B050'>'1-based; This should always be 100 for this version of
+iBMSC</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> <span style='color:#7F7F7F'>UndoRedo.</span>Pointer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>00 00 00 00 </span></b>&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='color:#00B050'>'0-based</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Structure()</span> AllCommands&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span
+style='color:red'>01 00 00 00 01 00 00 00 01 00 00 00 FF 01 00 00 00 01 00 00
+00 FF</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span>
+UndoCommandsCount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><span
+style='color:red'>01 00 00 00</span></b>&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='color:#00B050'>'This value is 0 if no commands</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Structure()</span>
+UndoCommands&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><span
+style='color:red'>01 00 00 00 FF</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span> ByteLength&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>01 00 00 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Byte()</span>
+Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>FF</span></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='color:#00B050'>'NoOperation</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span>
+RedoCommandsCount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><span
+style='color:red'>01 00 00 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Structure()</span>
+RedoCommands&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><span
+style='color:red'>01 00 00 00 FF</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Integer</span>
+ByteLength&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span
+style='color:red'>01 00 00 00</span></b></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='color:#548DD4'>Byte()</span>
+Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><span style='color:red'>FF</span></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='color:#00B050'>'NoOperation</span></span></p>
+
+<p class=MsoNoSpacing><span style='font-size:10.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
